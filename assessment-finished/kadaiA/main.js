@@ -34,8 +34,8 @@ function result() {
   }
 
   if (document.getElementById("日本").checked) {
-    const weight = `${Math.round(300*0.0714286)}kg`;
-    const temperature =  `摂氏 ${Math.round((86-32) * 5 / 9)} 度`;
+    const weight = `${Math.round(122*(1/2.2))}kg`;
+    const temperature =  `摂氏${Math.round((86-32) * 5 / 9)}度`;
     newStory = newStory.replace('華氏86度', temperature);
     newStory = newStory.replace('122ポンド', weight);
   }
